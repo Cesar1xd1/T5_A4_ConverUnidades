@@ -17,4 +17,128 @@
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rbGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo">
+
+        <RadioButton
+            android:id="@+id/rbDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Decimal  "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/rbBinario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Binario  " />
+
+        <RadioButton
+            android:id="@+id/rbOctal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Octal  " />
+
+        <RadioButton
+            android:id="@+id/rbHexadecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hexadecimal  " />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lbIngresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="64dp"
+        android:text="Ingresa un numero:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbGrupo" />
+
+    <EditText
+        android:id="@+id/etEntrada"
+        android:layout_width="405dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbIngresa" />
+
+    <CheckBox
+        android:id="@+id/cbBinario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:text="Binario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEntrada" />
+
+    <CheckBox
+        android:id="@+id/cbOctal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="Octal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbBinario" />
+
+    <CheckBox
+        android:id="@+id/cbHexadeciaml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="Hexadecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbOctal" />
+
+    <EditText
+        android:id="@+id/etResBinario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEntrada" />
+
+    <EditText
+        android:id="@+id/etResOctal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etResBinario" />
+
+    <EditText
+        android:id="@+id/etResHExadecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etResOctal" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
