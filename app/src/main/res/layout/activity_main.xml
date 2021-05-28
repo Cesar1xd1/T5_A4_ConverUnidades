@@ -32,6 +32,7 @@
             android:id="@+id/rbDecimal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:onClick="onClick"
             android:text="Decimal  "
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -40,18 +41,21 @@
             android:id="@+id/rbBinario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onClick"
             android:text="Binario  " />
 
         <RadioButton
             android:id="@+id/rbOctal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onClick"
             android:text="Octal  " />
 
         <RadioButton
             android:id="@+id/rbHexadecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onClick"
             android:text="Hexadecimal  " />
     </RadioGroup>
 
@@ -73,6 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="48dp"
+        android:onClick="seleccionador"
         android:text="Binario"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEntrada" />
@@ -83,6 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="40dp"
+        android:onClick="seleccionador"
         android:text="Octal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbBinario" />
@@ -93,6 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="40dp"
+        android:onClick="seleccionador"
         android:text="Hexadecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbOctal" />
@@ -104,7 +111,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="28dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEntrada" />
 
